@@ -28,7 +28,7 @@ export default function Portfolio() {
           
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-8">
-            {['About', 'Skills', 'Projects', 'Contact'].map((item) => (
+            {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item.toLowerCase())}
@@ -52,7 +52,7 @@ export default function Portfolio() {
         {isMenuOpen && (
           <div className="md:hidden bg-black border-b border-gray-800 py-4">
             <div className="flex flex-col gap-4 px-4">
-              {['About', 'Skills', 'Projects', 'Contact'].map((item) => (
+              {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item.toLowerCase())}
@@ -74,16 +74,16 @@ export default function Portfolio() {
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
           <div className="mb-6 inline-block">
             <div className="px-4 py-2 rounded-full border border-cyan-400/30 bg-cyan-400/5">
-              <span className="text-cyan-400 text-sm font-medium">👋 Добро пожаловать</span>
+              <span className="text-cyan-400 text-sm font-medium">👋 Welcome</span>
             </div>
           </div>
           
           <h1 className="text-5xl sm:text-7xl font-bold mb-6 leading-tight">
-            Привет, я <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent">Максим</span>
+            Hi, I'm <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent">Maxim</span>
           </h1>
           
           <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-            IT-инженер и разработчик из Астаны. Увлечён созданием цифровых решений и постоянно развиваюсь в сфере программирования.
+            IT engineer and developer from Astana. Passionate about creating digital solutions and constantly growing in software development.
           </p>
 
           <div className="flex gap-4 justify-center mb-12">
@@ -91,13 +91,13 @@ export default function Portfolio() {
               onClick={() => scrollToSection('projects')}
               className="px-8 py-3 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all"
             >
-              Мои проекты
+              My Projects
             </button>
             <button
               onClick={() => scrollToSection('contact')}
               className="px-8 py-3 border border-cyan-400/50 rounded-lg font-semibold hover:bg-cyan-400/10 transition-all"
             >
-              Контакты
+              Contact
             </button>
           </div>
 
@@ -110,35 +110,35 @@ export default function Portfolio() {
       {/* About Section */}
       <section id="about" className="py-24 px-4 bg-gray-900/30 border-t border-gray-800">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12">Обо мне</h2>
+          <h2 className="text-4xl font-bold mb-12">About Me</h2>
           
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                Я студент 1 курса Astana IT University, обучающийся по специальности Software Engineering на грантовой основе.
+                I'm a 1st year student at Astana IT University, studying Software Engineering on a scholarship basis.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                Увлекаюсь разработкой на Python и C++, имею опыт практики в компании 7Generation. Постоянно учусь новым технологиям и участвую в олимпиадах по программированию и математике.
+                I'm passionate about development with Python and C++, with practical experience at 7Generation. I continuously learn new technologies and participate in programming and mathematics olympiads.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed">
-                В свободное время занимаюсь спортом (сноуборд, плавание, атлетика) и изучаю современные технологии.
+                In my free time, I enjoy sports (snowboarding, swimming, athletics) and exploring modern technologies.
               </p>
             </div>
             
             <div className="space-y-4">
               <div className="p-6 bg-gray-800/50 rounded-lg border border-gray-700 hover:border-cyan-400/50 transition-all">
-                <div className="text-cyan-400 font-semibold mb-2">📍 Местоположение</div>
-                <p className="text-gray-300">Астана, Казахстан</p>
+                <div className="text-cyan-400 font-semibold mb-2">📍 Location</div>
+                <p className="text-gray-300">Astana, Kazakhstan</p>
               </div>
               
               <div className="p-6 bg-gray-800/50 rounded-lg border border-gray-700 hover:border-cyan-400/50 transition-all">
-                <div className="text-cyan-400 font-semibold mb-2">🎓 Образование</div>
-                <p className="text-gray-300">Astana IT University (Грант)</p>
+                <div className="text-cyan-400 font-semibold mb-2">🎓 Education</div>
+                <p className="text-gray-300">Astana IT University (Scholarship)</p>
               </div>
               
               <div className="p-6 bg-gray-800/50 rounded-lg border border-gray-700 hover:border-cyan-400/50 transition-all">
-                <div className="text-cyan-400 font-semibold mb-2">💼 Опыт</div>
-                <p className="text-gray-300">Практика в 7Generation (Разметчик данных)</p>
+                <div className="text-cyan-400 font-semibold mb-2">💼 Experience</div>
+                <p className="text-gray-300">Internship at 7Generation (Data Annotator)</p>
               </div>
             </div>
           </div>
@@ -148,11 +148,11 @@ export default function Portfolio() {
       {/* Skills Section */}
       <section id="skills" className="py-24 px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12">Навыки</h2>
+          <h2 className="text-4xl font-bold mb-12">Skills</h2>
           
           <div className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-xl font-semibold mb-6 text-cyan-400">Программирование</h3>
+              <h3 className="text-xl font-semibold mb-6 text-cyan-400">Programming</h3>
               <div className="space-y-4">
                 {['Python', 'C++'].map((skill) => (
                   <div key={skill} className="flex items-center gap-4">
@@ -166,15 +166,15 @@ export default function Portfolio() {
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold mb-6 text-cyan-400">Другие навыки</h3>
+              <h3 className="text-xl font-semibold mb-6 text-cyan-400">Other Skills</h3>
               <div className="space-y-3">
                 {[
-                  'Linux администрирование',
-                  'Сетевые технологии',
-                  'Аналитическое мышление',
-                  'Английский язык (Intermediate)',
-                  'Командная работа',
-                  'Решение задач'
+                  'Linux Administration',
+                  'Network Technologies',
+                  'Analytical Thinking',
+                  'English (Intermediate)',
+                  'Team Collaboration',
+                  'Problem Solving'
                 ].map((skill) => (
                   <div key={skill} className="flex items-center gap-3 text-gray-300">
                     <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
@@ -190,28 +190,28 @@ export default function Portfolio() {
       {/* Projects Section */}
       <section id="projects" className="py-24 px-4 bg-gray-900/30 border-t border-gray-800">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12">Проекты</h2>
+          <h2 className="text-4xl font-bold mb-12">Projects</h2>
           
           <div className="grid md:grid-cols-2 gap-8">
             {[
               {
-                title: 'Игровые проекты',
-                description: 'Разработал несколько игр с использованием Python. Реализовал логику игры, системы управления и интерактивные элементы.',
+                title: 'Game Projects',
+                description: 'Developed several games using Python. Implemented game logic, management systems, and interactive elements.',
                 tech: ['Python', 'Game Dev']
               },
               {
-                title: 'Скрипты автоматизации',
-                description: 'Создавал полезные скрипты для автоматизации рутинных задач на Python и Bash.',
+                title: 'Automation Scripts',
+                description: 'Created useful scripts for automating routine tasks in Python and Bash.',
                 tech: ['Python', 'Bash', 'Linux']
               },
               {
-                title: 'Участие в олимпиадах',
-                description: 'Активный участник школьных и университетских олимпиад по математике и информатике. Решение сложных алгоритмических задач.',
+                title: 'Olympiad Participation',
+                description: 'Active participant in school and university olympiads in mathematics and computer science. Solving complex algorithmic problems.',
                 tech: ['Algorithms', 'Problem Solving']
               },
               {
-                title: 'Разметка данных (7Generation)',
-                description: '3-месячная практика в компании 7Generation в качестве разметчика данных. Работа с большими объёмами информации.',
+                title: 'Data Annotation (7Generation)',
+                description: '3-month internship at 7Generation as a data annotator. Working with large volumes of information.',
                 tech: ['Data', 'Attention to detail']
               }
             ].map((project, idx) => (
@@ -242,9 +242,9 @@ export default function Portfolio() {
       {/* Contact Section */}
       <section id="contact" className="py-24 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-6">Давайте работать вместе</h2>
+          <h2 className="text-4xl font-bold mb-6">Let's Work Together</h2>
           <p className="text-xl text-gray-400 mb-12">
-            Я открыт к новым возможностям и интересным проектам
+            I'm open to new opportunities and exciting projects
           </p>
 
           <div className="flex gap-6 justify-center mb-12 flex-wrap">
@@ -284,7 +284,7 @@ export default function Portfolio() {
 
       {/* Footer */}
       <footer className="border-t border-gray-800 py-8 px-4 text-center text-gray-500">
-        <p>© 2025 Максим Самарин. Все права защищены.</p>
+        <p>© 2025 Maxim Samarin. All rights reserved.</p>
       </footer>
     </div>
   );
